@@ -25,13 +25,36 @@ fn main() {
 
     println!("The sum is: {}", sum);
 
-    let mut counter = 0;
-    loop{
-        counter += 1;
+    let condition = true;
 
-        if counter == 10{
-            // break counter;
-        }
+    let number =  if condition { 5 } else { 6 };
+
+    // 1. loop example
+
+    // let mut counter = 0;
+    // let result = loop{
+    //     counter += 1;
+
+    //     if counter == 10{
+    //          break counter;
+    //     }
+    // };
+    // println!("The result is {}", result);
+
+    // 2. while-loop
+    // let mut number = 3;
+    // while number !=0 {
+    //     println!("{}", number);
+    //     number -= 1;
+    // }
+    // println!("LIGHTOFF!!!")
+    // 3. for in
+    let a = [10, 20, 30,40];
+    for element in a.iter(){
+        println!("the value is: {}", element);
+    }
+    for number in 1..4{
+        println!("{}!", number);
     }
 }
 
